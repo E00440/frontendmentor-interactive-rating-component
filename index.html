@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/main.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+  <section class="container">
+    <section class="first-part">
+      <img src="/images/icon-star.svg" alt="star" class="star-icon">
+
+      <p class="first-paragraph">
+        How did we do?
+      </p>
+
+      <p class="second-paragraph">
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+
+      <section class="button-section">
+        <button class="number-button js-number-button" onclick="
+          buttonClicked(1);
+          ">
+          1
+        </button>
+
+        <button class="number-button js-number-button" onclick="
+        buttonClicked(2);
+        ">
+          2
+        </button>
+
+        <button class="number-button js-number-button" onclick="
+        buttonClicked(3);
+        ">
+          3
+        </button>
+
+        <button class="number-button js-number-button" onclick="
+        buttonClicked(4);
+        ">
+          4
+        </button>
+
+        <button class="number-button js-number-button" onclick="
+        buttonClicked(5);
+        ">
+          5
+        </button>
+      </section>
+
+      <p>
+        <button class="submit-button js-submit-button" onclick="
+          submitButton();
+          ">
+          Submit
+        </button>
+      </p>
+    </section>
+
+    <section class="second-part">
+      <img src="/images/illustration-thank-you.svg" alt="thank-you-image" class="thank-you-icon">
+      <p class="first-text-II">
+        You selected <span class='js-text'></span> out of 5
+      </p>
+
+      <p class="second-text-II">
+        Thank you!
+      </p>
+
+      <p class="third-text-II">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </p>
+    </section>
+  </section>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
